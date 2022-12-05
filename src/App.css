@@ -135,4 +135,8 @@ button {
   .container {
     width: 90%;
   }
+
+  .crossed {
+    text-decoration: line-through;
+  }
 }
