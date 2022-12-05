@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+body {
+  background-color: #ffb041;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.liContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.liContainer:last-child {
+  margin-bottom: 0px;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgContainer img {
+  cursor: pointer;
+}
+
+.imgContainer img:first-child {
+  margin-right: 10px;
+}
+
+.crossed {
+  text-decoration: line-through 2px #51a968;
+  font-weight: bold;
+}
+
+.notCrossed {
+  text-decoration: none;
+}
+
+.active {
+  background-color: rgb(89, 209, 117);
+}
+
+.activeDelete {
+  background-color: rgb(76, 143, 244);
+}
+
+.disabled {
+  background-color: rgb(187, 186, 186);
+}
+
+.btnContainer {
+  margin-left: 10px;
+}
+
+.btnContainer button:first-child {
+  margin-right: 10px;
+}
+
+button {
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 1100px) {
+  .container {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 820px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+
+  input, button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .liContainer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
   }
 }
